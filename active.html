@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athletes | Escudo</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/menu.css" />
+  <link rel="stylesheet" href="/css/active.css" />  
+  <link rel="icon" href="/images/favicon.ico" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <a href="index.html" style="text-decoration: none; color: black;">
+    <img src="images/logo2.jpg" alt="My Gym Logo" class="logo">
+    <span>Escudo</span>
+  </a>
+  <nav>
+    <div class="menu-icon" id="menu-icon">
+      &#9776;
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="class.html">Class</a></li>
+      <li><a href="active.html">Athletes</a></li>
+      <li><a href="access.html">Access</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div id="menu-overlay"></div>
+  </nav>
+</header>
+
+<main>
+  <div class="newspaper-container">
+    <div class="newspaper-header">
+      <h1>ESCUDO FIGHTERS</h1>
+      <p class="subtitle">Champions & Rising Stars</p>
+    </div>
+
+    <div class="newspaper-grid">
+      <!-- 選手1 -->
+      <div class="newspaper-article" onclick="toggleArticle(this)">
+        <div class="article-header">
+          <div class="article-header-left">
+            <h2 class="headline">Yamada Taro</h2>
+            <p class="byline">Professional Fighter • Lightweight Division</p>
+          </div>
+          <div class="toggle-icon">+</div>
+        </div>
+        
+        <img src="https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Yamada+Taro" alt="Yamada Taro" class="article-image">
+        
+        <div class="article-content">
+          <div class="content-inner">
+            <p class="content-text">
+              5年間のキャリアで培った技術と経験で、軽量級のトップファイターとして活躍中。圧倒的なスピードと正確な打撃で15勝3敗の戦績を誇る。次期チャンピオン候補として注目を集めており、その成長は目覚ましい。練習への真摯な姿勢と、試合での冷静な判断力が強みとなっている。
+            </p>
+            
+            <div class="belt-display">
+              <div class="belt-color belt-black"></div>
+              <div class="belt-info">
+                <div class="belt-label">Belt Rank</div>
+                <div class="belt-name">黒帯</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 選手2 -->
+      <div class="newspaper-article" onclick="toggleArticle(this)">
+        <div class="article-header">
+          <div class="article-header-left">
+            <h2 class="headline">Tanaka Jun</h2>
+            <p class="byline">Champion • Welterweight Division</p>
+          </div>
+          <div class="toggle-icon">+</div>
+        </div>
+        
+        <img src="https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Tanaka+Jun" alt="Tanaka Jun" class="article-image">
+        
+        <div class="article-content">
+          <div class="content-inner">
+            <p class="content-text">
+              ウェルター級現チャンピオン。8年間のキャリアで22勝1敗という驚異的な戦績を持つ。テクニックとパワーを兼ね備えた完成度の高いファイターとして、長期政権を築いている。防御技術も高く、相手の攻撃を的確にかわしながら、カウンターで仕留める戦いスタイルが特徴。
+            </p>
+            
+            <div class="belt-display">
+              <div class="belt-color belt-black"></div>
+              <div class="belt-info">
+                <div class="belt-label">Belt Rank</div>
+                <div class="belt-name">黒帯</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 選手3 -->
+      <div class="newspaper-article" onclick="toggleArticle(this)">
+        <div class="article-header">
+          <div class="article-header-left">
+            <h2 class="headline">Suzuki Kei</h2>
+            <p class="byline">Rising Star • Featherweight Division</p>
+          </div>
+          <div class="toggle-icon">+</div>
+        </div>
+        
+        <img src="https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Suzuki+Kei" alt="Suzuki Kei" class="article-image">
+        
+        <div class="article-content">
+          <div class="content-inner">
+            <p class="content-text">
+              期待の新星として急成長を遂げるフェザー級の若手ホープ。デビュー2年で8勝2敗、5KOという印象的な数字を残し、次世代のスター候補として大きな期待が寄せられている。攻撃的なファイトスタイルで観客を魅了し、その勢いは止まらない。若さと情熱で、さらなる高みを目指す。
+            </p>
+            
+            <div class="belt-display">
+              <div class="belt-color belt-purple"></div>
+              <div class="belt-info">
+                <div class="belt-label">Belt Rank</div>
+                <div class="belt-name">紫帯</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 選手4 -->
+      <div class="newspaper-article" onclick="toggleArticle(this)">
+        <div class="article-header">
+          <div class="article-header-left">
+            <h2 class="headline">Sato Ryu</h2>
+            <p class="byline">Veteran • Middleweight Division</p>
+          </div>
+          <div class="toggle-icon">+</div>
+        </div>
+        
+        <img src="https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Sato+Ryu" alt="Sato Ryu" class="article-image">
+        
+        <div class="article-content">
+          <div class="content-inner">
+            <p class="content-text">
+              10年以上のキャリアを持つベテランファイター。18勝5敗1引き分けの戦績で、その豊富な経験と確かな技術で若手選手の目標となっている。ジムの精神的支柱として活躍し、後進の育成にも力を注いでいる。戦いの中で培った知恵と、経験に裏打ちされた安定感が武器。
+            </p>
+            
+            <div class="belt-display">
+              <div class="belt-color belt-brown"></div>
+              <div class="belt-info">
+                <div class="belt-label">Belt Rank</div>
+                <div class="belt-name">茶帯</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p class="center">&copy; 2025 Escudo. All Rights Reserved.</p>
+</footer>
+
+<script src="/scripts/menu.js"></script>
+<script src="/scripts/modal.js"></script>
+<script src="/scripts/active.js"></script>
+</body>
+</html>

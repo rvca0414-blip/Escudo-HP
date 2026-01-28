@@ -1,0 +1,28 @@
+.heading-gradation{
+  position: relative;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  padding-top: 1.5em;
+  color: #333333;
+  padding-bottom: 18px;
+  display: inline-block;
+  letter-spacing: 0.06em;
+}
+
+.heading-gradation::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(to right, transparent 0%, #333333 50%, transparent 100%);
+}
+
+.about-section {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 0 20px;
+  background-color: #fff;
+}

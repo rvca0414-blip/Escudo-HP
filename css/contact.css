@@ -1,0 +1,257 @@
+.contact {
+    text-align: center;
+}
+
+.page-header {
+    padding: 0px 0px 60px;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.page-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.page-header p {
+    font-size: 16px;
+    color: #666666;
+    letter-spacing: 1px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    width: 290px;
+    
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr; /* 1カラムレイアウトを維持 */
+  gap: 60px;
+}
+
+.info-card {
+  background: #fafafa;
+  padding: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  border-color: #cccccc;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-card .icon {
+  font-size: 22px;
+}
+
+.info-card p {
+  color: #666666;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.info-card a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info-card a:hover {
+  color: #666666;
+}
+
+/* 情報セクション */
+.info-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+.info-card {
+    background: #fafafa;
+    padding: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    border-color: #cccccc;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-card .icon {
+    font-size: 22px;
+}
+
+.info-card p {
+    color: #666666;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.info-card a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.info-card a:hover {
+    color: #666666;
+}
+
+/* FAQ */
+.faq-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background: #fafafa;
+}
+
+.faq-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.faq-item {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: #cccccc;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    color: #666666;
+    line-height: 1.8;
+    display: none;
+    font-size: 15px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-toggle {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+/* タブレット・PC用レイアウト */
+@media (min-width: 769px) {
+    body {
+        padding-top: 100px; 
+    }
+
+    .page-header {
+        padding: 100px 40px 80px;
+    }
+
+    .page-header h1 {
+        font-size: 56px;
+    }
+
+    .page-header p {
+        font-size: 18px;
+    }
+
+    .contact-container {
+        gap: 0; 
+        padding: 80px 40px;
+    }
+
+    .info-card {
+        padding: 40px;
+        margin-bottom: 30px;
+    }
+
+    .info-card h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .info-card .icon {
+        font-size: 24px;
+    }
+
+    .faq-section {
+        padding: 80px 40px;
+    }
+
+    .faq-section h2 {
+        font-size: 42px;
+        margin-bottom: 50px;
+    }
+
+    .faq-item {
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    .faq-question {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class | Escudo</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/menu.css" />
+  <link rel="stylesheet" href="/css/class.css" />
+  <link rel="icon" href="/images/favicon.ico" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html" style="text-decoration: none; color: black;"> 
+      <img src="images/logo2.jpg" alt="My Gym Logo" class="logo"> 
+      <span>Escudo</span>
+    </a>
+    <div class="menu-icon" id="menu-icon">
+      &#9776;
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Home</a></li>
+        <li><a href="class.html">Class</a></li>
+        <li><a href="active.html">Athletes</a></li>
+        <li><a href="access.html">Access</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div id="menu-overlay"></div>
+  </header>
+
+  <main>
+  <div class="page-header">
+    <h1>Weekly Schedule</h1>
+    <p>週間スケジュールは以下の通りです。<br>ご自身のライフスタイルに合わせて、ご都合の良い時間にご参加ください。</p>
+  </div>
+  <div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+              <th></th>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>木</th>
+                <th>金</th>
+                <th>土</th>
+                <th>日</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>19:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>19:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="kiss" rowspan="2">キッズクラス</td>
+                <td></td>
+            </tr>
+
+            <tr>
+              <td>20:00</td>
+              <td class="technique" rowspan="3">テクニッククラス</td>
+              <td rowspan="6">オープンマット</td>
+              <td rowspan="6">オープンマット</td>
+              <td class="sparring" rowspan="6">スパーリングクラス</td>
+              <td class="technique" rowspan="3">テクニッククラス</td>
+              <td rowspan="6">オープンマット</td>
+            </tr>
+            
+            <tr>
+              <td>20:30</td>
+              <td class="technique" rowspan="2">テクニッククラス</td>
+            </tr>
+          
+
+            <tr>
+                <td>21:00</td>
+                <!-- <td class="sparring">スパーリングクラス</td>
+                <td class="sparring" rowspan="2">スパーリングクラス</td>
+                <td class="sparring" rowspan="2">スパーリングクラス</td> -->
+            </tr>
+
+            <tr>
+              <td>21:30</td>
+              <td class="sparring" rowspan="3">スパーリングクラス</td>
+              <td class="sparring" rowspan="3">スパーリングクラス</td>
+              <td class="sparring" rowspan="3">スパーリングクラス</td>
+            </tr>
+
+            <tr>
+                <td>22:00</td>
+            </tr>
+
+            <tr>
+              <td>22:30</td>
+            </tr>
+
+            <tr>
+              <td>23:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+  </div>
+
+  <h1 class="timeschedule"></h1>
+  <div class="container">
+    <div class="item left-image slide-in-right">
+      <img src="photo1.jpg" alt="写真1">
+      <div class="text">
+        <h3>Sparring Class</h3>
+        <p>実戦形式の対人練習を通じて、技のタイミングや体の使い方を学びます。初心者にも安全に配慮した指導を行います。</p>
+      </div>
+    </div>
+
+    <div class="item right-image slide-in-left">
+      <img src="images/kis class.jpg" alt="写真2" width="50%">
+      <div class="text">
+        <h3>Kids Class</h3>
+        <p>礼儀や協調性を大切にしながら、遊びを取り入れて楽しく柔術を学ぶ子ども向けクラスです。</p>
+      </div>
+    </div>
+
+    <div class="item left-image slide-in-right">
+      <img src="photo3.jpg" alt="写真3">
+      <div class="text">
+        <h3>Technique Class</h3>
+        <p>柔術の基本技術を丁寧に学ぶクラスです。技を反復練習し、正確な動きを身につけていきます。</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="center">&copy; 2025 Escudo. All Rights Reserved.</p>
+  </footer>
+  <script src="/scripts/menu.js"></script>
+  <script src="/scripts/class.js"></script>
+</body>
+</html>
