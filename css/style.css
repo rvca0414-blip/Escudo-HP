@@ -1,9 +1,14 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.8;
-  background-color: #fff; 
+  background-color: #fff;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 
@@ -17,6 +22,41 @@ h1 {
   text-align: center;
   margin-bottom: 1.5rem;
   margin-top: 80px;
+}
+
+/* 共通ページヘッダー */
+.page-header {
+  padding: 60px 0 60px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.page-header h1 {
+  font-family: 'Noto Sans JP', sans-serif;
+  /* class.css didn't specify font, but access/contact might have. class.css has h1 size 42px. Let's stick to class.css source primarily but ensure font is correct. class.html uses Noto Sans JP. */
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-shadow: none;
+  /* Reset shadow from generic h1 */
+  text-transform: none;
+  /* Reset transform if needed, though class.css didn't have it. style.css h1 has uppercase. */
+  margin-top: 0;
+  /* Override generic h1 margin-top */
+}
+
+.page-header p {
+  font-size: 16px;
+  color: #666666;
+  letter-spacing: 1px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  width: auto;
 }
 
 .ex1 {
@@ -52,7 +92,7 @@ h1 {
 
 .slideshow {
   position: relative;
-  width: 100%;  
+  width: 100%;
   height: 500px;
   /* overflow: hidden; */
 }
@@ -71,9 +111,11 @@ h1 {
 .slide:nth-child(1) {
   animation-delay: 0s;
 }
+
 .slide:nth-child(2) {
   animation-delay: 3s;
 }
+
 .slide:nth-child(3) {
   animation-delay: 6s;
 }
@@ -81,18 +123,32 @@ h1 {
 
 
 @keyframes fade {
-  0% { opacity: 0; }
-  8% { opacity: 1; }
-  33% { opacity: 1; }
-  41% { opacity: 0; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  41% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .social-buttons {
   padding: 40px 0;
   text-align: center;
 }
- 
+
 .social-button {
   display: inline-flex;
   justify-content: center;
@@ -113,13 +169,15 @@ h1 {
 /* パソコン用の追加スタイル */
 @media (min-width: 1024px) {
   body {
-    padding-top: 80px; /* ヘッダーの高さ分の余白を確保 */
+    padding-top: 80px;
+    /* ヘッダーの高さ分の余白を確保 */
     background-color: #fff;
   }
 
   .about-section {
     margin: 60px auto;
-    max-width: 1000px; /* パソコンでは幅を広く */
+    max-width: 1000px;
+    /* パソコンでは幅を広く */
     padding: 0px 40px;
     font-size: 16px;
   }
@@ -139,7 +197,8 @@ h1 {
   }
 
   .slideshow {
-    height: 1000px; /* パソコンでは高さを大きく */
+    height: 1000px;
+    /* パソコンでは高さを大きく */
   }
 
   /* 帯関連のレスポンシブ設定は削除しました */

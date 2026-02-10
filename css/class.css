@@ -1,40 +1,13 @@
-.page-header {
-  padding: 60px auto 60px;
-  text-align: center;
-  background-color: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.page-header h1 {
-  font-size: 42px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  padding-top: 40px;
-  margin-bottom: 20px;
-  color: #1a1a1a;
-}
-
-.page-header p {
-  font-size: 16px;
-  color: #666666;
-  letter-spacing: 1px;
-  max-width: 700px;
-  margin: 0 auto 70px;
-  line-height: 1.8;
-  width: 290px;
-}
-
-
-/* テーブルスタイル */
 .table-wrapper {
+  max-width: 1200px;
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  margin-bottom: 60px;
+  margin: 80px auto 60px;
   background: white;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid #ffff;
 }
 
@@ -44,12 +17,10 @@ table {
   overflow: hidden;
   width: 100%;
   border-collapse: collapse;
-  position:-webkit-sticky;
-  position: sticky;
-  left: 0;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #c2c2c2;
   padding: 12px 8px;
   text-align: center;
@@ -71,7 +42,6 @@ td:first-child {
   font-size: 13px;
 }
 
-/* クラス別の背景色 - 元の配色 */
 .sparring {
   background-color: #8CDAFE;
   color: #333;
@@ -122,7 +92,7 @@ td:first-child {
   background: #ffffff;
   border-radius: 12px;
   padding: 40px;
-  box-shadow: 0 4px 20px rgba(255,255,255,0.1);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
   border: 1px solid #333333;
   transition: all 0.3s ease;
 }
@@ -133,7 +103,7 @@ td:first-child {
 
 .item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(255,255,255,0.15);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.15);
   border-color: #555555;
 }
 
@@ -263,7 +233,8 @@ td:first-child {
     font-size: 12px;
   }
 
-  th, td {
+  th,
+  td {
     padding: 8px 4px;
     font-size: 11px;
   }
@@ -299,7 +270,7 @@ td:first-child {
   .item:last-child {
     margin-bottom: 0;
   }
-  
+
   .item img {
     width: 100%;
     max-width: 350px;
@@ -307,7 +278,7 @@ td:first-child {
     margin-bottom: 25px;
     border: 2px solid #e0e0e0;
   }
-  
+
   .text {
     padding: 0 10px;
   }
@@ -340,7 +311,8 @@ td:first-child {
     min-width: 650px;
   }
 
-  th, td {
+  th,
+  td {
     padding: 6px 3px;
     font-size: 10px;
   }
@@ -372,12 +344,12 @@ td:first-child {
 @media (min-width: 769px) {
   body {
     padding-top: 100px;
-    background-color: #fafafa;
+    background-color: #fff;
   }
-  
+
   .table-wrapper {
     max-width: 1200px;
-    margin: 0 auto 80px;
+    margin: 80px auto 80px;
   }
 
   .container {
@@ -388,7 +360,7 @@ td:first-child {
     padding: 100px 0;
     background-color: #1a1a1a;
   }
-  
+
   .item {
     margin-left: auto;
     margin-right: auto;
@@ -412,5 +384,5 @@ footer .center {
   margin: 0;
   letter-spacing: 1px;
   font-size: 14px;
-  color:#fff;
+  color: #fff;
 }
