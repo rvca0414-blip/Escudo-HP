@@ -102,8 +102,63 @@
   justify-content: center;
   color: #666666;
   font-size: 14px;
-  margin-top: 100px;
+  margin-top: 40px;
+  /* Reduced from 100px for consistency */
   letter-spacing: 1px;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .access-container {
+    margin-top: 40px;
+    gap: 40px;
+    /* Unified gap */
+    padding: 0 20px;
+  }
+
+  .info-card,
+  .access-info {
+    margin-bottom: 40px;
+    /* Unified spacing */
+  }
+
+  .access-info {
+    margin-top: 0;
+    /* Reset margin-top to rely on margin-bottom of previous element or gap */
+  }
+
+  .map-container {
+    margin-top: 0;
+    /* Remove top margin to rely on previous element's margin for spacing */
+    height: 300px;
+  }
+
+  .map-section {
+    padding-top: 0;
+    /* Remove padding to ensure exact 40px gap from access-info */
+    margin-top: 0;
+  }
+
+  /* テキストの折り返し幅調整（約13文字） - Content reverted, keeping normal flow */
+  .info-card p,
+  .access-info p {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    word-wrap: normal;
+  }
+
+  /* Center the content inside cards if it looks better with the narrow text - changed to left align as requested */
+  .info-card,
+  .access-info {
+    text-align: left;
+  }
+
+  .info-card h3,
+  .access-info h3 {
+    justify-content: flex-start;
+  }
 }
 
 /* タブレット・PC用レイアウト */

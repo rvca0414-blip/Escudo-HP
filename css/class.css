@@ -213,7 +213,8 @@ td:first-child {
 /* スマホ対応（768px以下） */
 @media (max-width: 768px) {
   body {
-    padding: 10px;
+    padding: 100px 10px 10px;
+    /* Restore 100px top padding from menu.css */
   }
 
   h1 {
@@ -294,14 +295,16 @@ td:first-child {
     font-size: 0.9rem;
     line-height: 1.8;
     color: #333333;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: none;
   }
 }
 
 /* 小型スマホ対応（480px以下） */
 @media (max-width: 480px) {
-  h1 {
-    font-size: 1.3rem;
-  }
+
 
   .table-wrapper {
     padding: 8px;
