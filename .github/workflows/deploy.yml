@@ -1,0 +1,24 @@
+name: Deploy via SSH
+
+on:
+  push:
+    branches:
+      - main  # ※GitHubのブランチ名が master の場合は master に書き換えてください
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Deploy to Xserver
+      uses: easingthemes/ssh-deploy@main
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        REMOTE_HOST: ${{ secrets.SSH_HOST }}
+        REMOTE_USER: ${{ secrets.SSH_USERNAME }}
+        REMOTE_PORT: ${{ secrets.SSH_PORT }}
+        SOURCE: "./"
+        TARGET: "escudoweb.xsrv.jp/public_html/"
+        EXCLUDE: "/.git/, /.github/"
