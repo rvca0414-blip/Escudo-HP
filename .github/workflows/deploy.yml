@@ -20,5 +20,5 @@ jobs:
         REMOTE_USER: ${{ secrets.SSH_USERNAME }}
         REMOTE_PORT: ${{ secrets.SSH_PORT }}
         SOURCE: "./"
-        TARGET: "escudo-bjj/public_html/"
+        TARGET: "escudo-bjj.com/public_html/"
         EXCLUDE: "/.git/, /.github/"
